@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<form id="myForm">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" required><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" required><br>
+
+  <label for="age">Age:</label>
+<!--  'for' attribute here is used to give this particular label the id of age which is used in the input tag below-->
+  <input type="number" id="age" required><br>
+
+  <label for="country">Country:</label>
+  <select id="country" required>
+<!--    usage of select tag with the option tag to create a drop-down menu-->
+    <option value="" disabled selected>Select country</option>
+    <option value="Ghana">Ghana</option>
+    <option value="Japan">Japan</option>
+    <option value="Singapore">Singapore</option>
+  </select><br>
+
+  <label for="picture">Picture:</label>
+  <input type="file" id="picture" accept="image/*" required><br>
+<!--  the accept attribute here is used to specify what type of image we should be using-->
+
+  <button type="submit">Submit</button>
+</form>
+
+<script src="js/main.js"></script>
+
+</html>
